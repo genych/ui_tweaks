@@ -3,7 +3,8 @@
 // @namespace   esh
 // @description wp cleaner
 // @include     *dyninno.facebook.com/chat*
-// @version     0.3
+// @grant none
+// @version     0.4
 // ==/UserScript==
 
 const removeScrolls = () => {document.body.style.overflow = "hidden";};
@@ -20,8 +21,10 @@ const tweakCss = () =>
 
   // left col
   // todo: scale image as well
+  rule += '._1enh {flex-basis: 1px !important; min-width: 42px !important}';
   rule += '._4ld-, ._4ldz, ._55lt- {width: 20px !important; height: 20px !important}';
   rule += '._1ht6 {font-size: 11px !important}';
+  rule += '._1htf {font-size: 9px !important}';
 
   const css = document.createElement('style');
 
