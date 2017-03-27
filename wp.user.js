@@ -1,10 +1,12 @@
+'use strict';
+
 // ==UserScript==
 // @name        wp
 // @namespace   esh
 // @description wp cleaner
 // @include     *dyninno.facebook.com/chat*
 // @grant none
-// @version     0.45
+// @version     0.5
 // ==/UserScript==
 
 const removeScrolls = () => {document.body.style.overflow = "hidden";};
@@ -30,5 +32,14 @@ const tweakCss = () =>
   document.getElementsByTagName("head")[0].appendChild(css);
 };
 
+const cleanLinks = () =>
+{
+  for (let a of document.getElementsByTagName('a'))
+  {
+     a.href = a.text;
+  }
+};
+
 window.onload = tweakCss;
+window.setInterval(cleanLinks, 2000);
 removeScrolls();
