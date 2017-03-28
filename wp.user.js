@@ -19,7 +19,7 @@ const tweakCss = () =>
   rule += '._52mr {max-width: 100% !important}'; // own message
   rule += '.__i_ {font-size: 12px !important}'; // font size
   rule += '._hh7 {padding: 2px 4px !important}'; // text density
-  rule += '._2poz {display: none !important}'; // inline link preview
+  // rule += '._2poz {display: none !important}'; // inline link preview
 
   // left col
   rule += '._1ht6 {font-size: 11px !important}';
