@@ -36,7 +36,10 @@ const cleanLinks = () =>
 {
   for (let a of document.getElementsByTagName('a'))
   {
-     a.href = a.text;
+    if (a.target === '_blank')
+    {
+      a.href = a.text;
+    }
   }
 };
 
