@@ -1,1 +1,1 @@
-script for https://violentmonkey.github.io/ or whatever you prefer
+scripts for https://violentmonkey.github.io/ or whatever you prefer
