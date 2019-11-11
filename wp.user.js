@@ -4,7 +4,7 @@
 // @name        wp_tweaks
 // @namespace   esh
 // @description clean and compact wp chat
-// @include     *.facebook.com/chat*
+// @include     *.workplace.com/chat*
 // @grant none
 // @version     0.7
 // ==/UserScript==
